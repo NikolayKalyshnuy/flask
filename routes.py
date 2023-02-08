@@ -1,4 +1,4 @@
-from app import app
+from main import app
 from flask import render_template, url_for
 from models import db
 from models import Product, Order, OrderProduct
@@ -9,7 +9,7 @@ from aiogram.dispatcher.filters.state import StatesGroup, State
 from aiogram.types import Message, LabeledPrice, ContentType
 from aiogram.dispatcher.filters import Command
 from aiogram.dispatcher import FSMContext
-from app import dispatcher as dp, bot
+from main import dispatcher as dp, bot
 import bot.keyboards as keyboards
 import bot.Price as Price
 
